@@ -40,7 +40,7 @@ A team project for Software Engineering (CS 202).
 
 | Name | GitHub | Role |
 |------|--------|------|
-| | [@alicemdao](https://github.com/alicemdao) | |
+| Alice Dao| [@alicemdao](https://github.com/alicemdao) | |
 | Suhail Tailor | [@stailor-creator](https://github.com/stailor-creator) | |
 | | | |
 | | | |
