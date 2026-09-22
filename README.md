@@ -42,7 +42,7 @@ A team project for Software Engineering (CS 202).
 |------|--------|------|
 | Alice Dao| [@alicemdao](https://github.com/alicemdao) | |
 | Suhail Tailor | [@stailor-creator](https://github.com/stailor-creator) | |
-| | | |
+| Ishita Prakash| | |
 | | | |
 
 ---
@@ -51,7 +51,7 @@ A team project for Software Engineering (CS 202).
 
 **TODO:** Replace with what we actually pick.
 
-| Layer | Technology |
+| Layer | Tech |
 |-------|-----------|
 | Frontend | React.js |
 | Backend | Node.js |
