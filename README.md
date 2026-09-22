@@ -54,10 +54,11 @@ A team project for Software Engineering (CS 202).
 | Layer | Technology |
 |-------|-----------|
 | Frontend | React.js |
-| Backend | |
-| Database | |
-| Testing | |
+| Backend | Node.js |
+| Database |PostgreSQL |
+| Cloud Hosting| AWS (for now) |
 | CI/CD | GitHub Actions |
+|External APIs | Google Maps JavaScript & Geocoding API|
 
 ---
 
