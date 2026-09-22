@@ -1,167 +1,151 @@
 # INSAne
 
-> **TODO:** One-sentence description of what INSAne does and who it's for.
+> **TODO:** One-sentence description of the app.
 
-A team project for Software Engineering (CS 202).
+An end-to-end vacation rental booking and management platform (similar to Airbnb), built for CS 202 — Software Engineering.
 
 ---
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Team](#team)
+- [Project Journal](#project-journal)
+- [Product & Sprint Backlog](#product--sprint-backlog)
+- [Feature Set](#feature-set)
 - [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Development Workflow](#development-workflow)
-- [Documentation](#documentation)
-
----
-
-## Overview
-
-**TODO:** Fill in once scope is locked.
-
-**Problem.** What problem are we solving?
-
-**Solution.** How does INSAne solve it?
-
-**Scope.** What is in scope for this semester, and what is explicitly out of scope?
-
-### Features
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
+- [Architecture & Diagrams](#architecture--diagrams)
+- [UI Wireframes](#ui-wireframes)
+- [Design Decisions](#design-decisions)
 
 ---
 
 ## Team
 
-| Name | GitHub | Role |
-|------|--------|------|
-| Alice Dao| [@alicemdao](https://github.com/alicemdao) | |
-| Suhail Tailor | [@stailor-creator](https://github.com/stailor-creator) | |
-| Ishita Prakash| | |
-| Navaneeth Puklath| [@NavaneethNairP](https://github.com/NavaneethNairP)| |
+**Team Name:** _TODO_
+
+| Name | GitHub | Component Owned | Areas of Contribution |
+|------|--------|-----------------|----------------------|
+| Alice Dao | [@alicemdao](https://github.com/alicemdao) | | |
+| Suhail Tailor | [@stailor-creator](https://github.com/stailor-creator) | | |
+| Ishita Prakash | | | |
+| Navaneeth Puklath | [@NavaneethNairP](https://github.com/NavaneethNairP) | | |
+
+> Each member owns at least one software component. Contribution summaries are updated at the end of each sprint.
+
+---
+
+## Project Journal
+
+📓 **[Project Journal](docs/journal/)** — _TODO: link once the folder exists_
+
+The journal contains, for each week:
+
+- **Weekly Scrum Report** — what each member completed, what's next, what's blocked
+- **Sprint Backlog** — stories committed for the sprint
+- **Burndown Chart** — sprint progress
+
+### XP Core Values
+
+We selected the following two XP core values to follow throughout the project:
+
+1. **_TODO: value #1_** — how the team practiced it
+2. **_TODO: value #2_** — how the team practiced it
+
+> Options: Communication · Simplicity · Feedback · Courage · Respect
+
+---
+
+## Product & Sprint Backlog
+
+| Artifact | Link |
+|----------|------|
+| Product Backlog | _TODO_ |
+| Sprint Backlog | _TODO_ |
+| Task Board | _TODO_ |
+| Burndown Chart | _TODO_ |
+
+---
+
+## Feature Set
+
+All APIs accept and return **JSON**, with input validation and error handling. Access is gated by role.
+
+### 👤 Customer
+
+- [ ] Register / Login as Customer
+- [ ] Search rentals by date, time, # guests, duration, availability
+- [ ] Optional search filters: city / state / zip code
+- [ ] Address search via Google Maps integration
+- [ ] Browse results with photos/videos, amenities, cost rating, reviews & ratings, and # of times booked today
+- [ ] View listing locations on Google Maps
+- [ ] Book a stay (max. 14 days)
+- [ ] Cancel a booking
+- [ ] Submit reviews and ratings on past bookings
+
+### 🏠 Host
+
+- [ ] Register / Login as Host
+- [ ] Add a new listing
+- [ ] Remove a listing
+- [ ] View my listings
+- [ ] Add / update name, address, contact info, hours, available booking times, max # guests
+- [ ] Add / update descriptions, photos
+- [ ] Analytics dashboard — rentals and bookings by zip code over 30 / 60 / 90 day periods, scoped to my listings
+
+### 🛡️ Admin
+
+- [ ] Login as Admin
+- [ ] Remove incomplete or inaccurate listings
+- [ ] Approve new rentals for inclusion on the app
+- [ ] Analytics dashboard — rentals and bookings by zip code over 30 / 60 / 90 day periods, across all listings
 
 ---
 
 ## Tech Stack
 
-**TODO:** Replace with what we actually pick.
-
-| Layer | Tech |
-|-------|-----------|
-| Frontend | React.js |
-| Backend | Node.js |
-| Database |PostgreSQL |
-| Cloud Hosting| AWS (for now) |
-| CI/CD | GitHub Actions |
-|External APIs | Google Maps JavaScript & Geocoding API|
-
----
-
-## Getting Started
-
-### Prerequisites
-
-**TODO:** List required tooling and versions (e.g. Node 20+, Python 3.11+, Docker).
-
-### Setup
-
-```bash
-# Clone the repo
-git clone https://github.com/alicemdao/INSAne.git
-cd INSAne
-
-# Install dependencies
-# TODO: add install command
-```
-
-### Running locally
-
-```bash
-# TODO: add run command
-```
-
-### Running tests
-
-```bash
-# TODO: add test command
-```
+| Layer | Tech | Owner |
+|-------|------|-------|
+| Frontend | React.js | |
+| Backend | Node.js | |
+| Database | PostgreSQL | |
+| External APIs | Google Maps JavaScript & Geocoding API | |
+| Cloud Hosting | AWS (for now) — Auto Scaling EC2 cluster behind a Load Balancer | |
+| CI/CD | GitHub Actions | |
+| Testing | _TODO_ | |
 
 ---
 
-## Project Structure
+## Architecture & Diagrams
 
-```
-INSAne/
-├── docs/          # Requirements, UML diagrams, sprint notes
-├── src/           # Application source
-├── tests/         # Test suite
-└── README.md
-```
+### Component Diagram
 
-**TODO:** Update as the structure takes shape.
+> **TODO:** Add `docs/diagrams/component-diagram.png` and embed it here.
 
----
+### Deployment Diagram
 
-## Development Workflow
+> **TODO:** Add `docs/diagrams/deployment-diagram.png` and embed it here.
+> Must show the auto-scaled EC2 cluster, load balancer, and database tier.
 
-We follow an Agile workflow with short sprints.
+### Database Schema
 
-### Branching
-
-- `main` — always deployable. No direct commits.
-- `dev` — integration branch for the current sprint.
-- `feature/<short-name>` — one branch per task.
-- `fix/<short-name>` — bug fixes.
-
-### Making a change
-
-```bash
-git checkout dev
-git pull
-git checkout -b feature/login-page
-
-# ... make changes ...
-
-git add .
-git commit -m "Add login page form validation"
-git push -u origin feature/login-page
-```
-
-Then open a Pull Request into `dev`. **At least one teammate reviews before merge.**
-
-### Commit messages
-
-Write them in the imperative mood, describing what the commit does:
-
-```
-Add user authentication endpoint
-Fix off-by-one error in pagination
-Update README with setup instructions
-```
-
-### Definition of Done
-
-A task is done when it is implemented, tested, reviewed by a teammate, merged into `dev`, and the docs are updated if behavior changed.
+> **TODO:** Add ER diagram and describe the mock data set for listings.
 
 ---
 
-## Documentation
+## UI Wireframes
 
-Course deliverables — to be added to the repo as they're written.
+> **TODO:** Add one wireframe per screen to `docs/wireframes/` and link them below.
 
-- [ ] Requirements specification
-- [ ] UML class diagrams
-- [ ] UML sequence diagrams
-- [ ] UML state diagrams
-- [ ] Sprint retrospectives
+| Screen | Role | Wireframe |
+|--------|------|-----------|
+| | | |
 
 ---
 
-## License
+## Design Decisions
 
-**TODO:** Add a license, or note that this is coursework and not licensed for reuse.
+> **TODO:** Record the significant choices and the reasoning behind each — stack selection, authentication and role handling, API structure, data model, and deployment topology.
+
+| Decision | Rationale | Alternatives Considered |
+|----------|-----------|------------------------|
+| | | |
