@@ -53,7 +53,7 @@ A team project for Software Engineering (CS 202).
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | |
+| Frontend | React.js |
 | Backend | |
 | Database | |
 | Testing | |
